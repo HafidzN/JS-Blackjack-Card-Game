@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h5 id='blackjack-result'>JS Blackjack Game</h5>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>BOT: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn btn-primary mr-2" id='blackjack-hit-button'>Hit</button>
+                <button class="btn btn-warning mr-2" id='blackjack-stand-button'>Stand</button>
+                <button class="btn btn-danger"       id='blackjack-deal-button'>Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Win</th>
+                    <th>Lost</th>
+                    <th>Draw</th>
+                </tr>
+
+                <tr>
+                    <td id='wins'  >0</td>
+                    <td id='losses'>0</td>
+                    <td id='draw'  >0</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src='./static/js/justascript.js'></script>    
+</body>
+</html>
